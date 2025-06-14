@@ -1,34 +1,108 @@
+/* 页面整体容器 */
 .container {
   max-width: 800px;
-  margin: auto;
-  padding: 2rem;
-  font-family: sans-serif;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  font-family: 'Segoe UI', sans-serif;
 }
 
+/* 标题 */
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* 表单样式 */
 form {
   display: flex;
-  gap: 1rem;
-  margin-bottom: 1rem;
   flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
 }
 
-input, select, button {
-  padding: 0.5rem;
-  font-size: 1rem;
+form input,
+form select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 
+form button {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* 表格样式 */
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
 }
 
-th, td {
-  border: 1px solid #ccc;
-  padding: 0.5rem;
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 10px;
   text-align: center;
 }
 
-.summary p {
+table th {
+  background-color: #f2f2f2;
   font-weight: bold;
+}
+
+/* 删除按钮 */
+table button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+table button:hover {
+  background-color: #d32f2f;
+}
+
+/* 汇总信息 */
+.summary {
+  background-color: #f0f8ff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.summary p {
+  margin: 5px 0;
+}
+
+/* 导出按钮 */
+.summary button {
+  margin-top: 10px;
+  background-color: #2196F3;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.summary button:hover {
+  background-color: #1976D2;
 }
